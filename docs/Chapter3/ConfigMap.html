@@ -1,0 +1,837 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>ConfigMap · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Secret.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../Chapter1/">
+            
+                <a href="../Chapter1/">
+            
+                    
+                    Kubernetes基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../Chapter1/jieshao.html">
+            
+                <a href="../Chapter1/jieshao.html">
+            
+                    
+                    基本概念与组件原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../Chapter1/kubeadm.html">
+            
+                <a href="../Chapter1/kubeadm.html">
+            
+                    
+                    使用Kubeadm部署集群
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../Chapter1/YAML.html">
+            
+                <a href="../Chapter1/YAML.html">
+            
+                    
+                    YAML文件语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../Chapter1/Pod.html">
+            
+                <a href="../Chapter1/Pod.html">
+            
+                    
+                    深入理解Pod
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../Chapter2/">
+            
+                <a href="../Chapter2/">
+            
+                    
+                    Kubernetesb编排控制器
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../Chapter2/deployment.html">
+            
+                <a href="../Chapter2/deployment.html">
+            
+                    
+                    Deployment
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../Chapter2/StatefulSet.html">
+            
+                <a href="../Chapter2/StatefulSet.html">
+            
+                    
+                    StatefulSet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../Chapter2/DaemonSet.html">
+            
+                <a href="../Chapter2/DaemonSet.html">
+            
+                    
+                    DaemonSet
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Kubernets配置管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.4.1" data-path="ConfigMap.html">
+            
+                <a href="ConfigMap.html">
+            
+                    
+                    ConfigMap
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="Secret.html">
+            
+                <a href="Secret.html">
+            
+                    
+                    Secret
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="ServiceAccount.html">
+            
+                <a href="ServiceAccount.html">
+            
+                    
+                    ServiceAccount
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="RBAC.html">
+            
+                <a href="RBAC.html">
+            
+                    
+                    RBAC
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../Chapter4/">
+            
+                <a href="../Chapter4/">
+            
+                    
+                    Kubernetes持久化存储
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../Chapter4/Pv.html">
+            
+                <a href="../Chapter4/Pv.html">
+            
+                    
+                    PV
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../Chapter4/PVC.html">
+            
+                <a href="../Chapter4/PVC.html">
+            
+                    
+                    PVC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../Chapter4/StorageClass.html">
+            
+                <a href="../Chapter4/StorageClass.html">
+            
+                    
+                    StorageClass
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../Chapter4/LocalPv.html">
+            
+                <a href="../Chapter4/LocalPv.html">
+            
+                    
+                    本地持久化存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="Ceph.html">
+            
+                <a href="Ceph.html">
+            
+                    
+                    网络分布式存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../Chapter5/">
+            
+                <a href="../Chapter5/">
+            
+                    
+                    SPRING系列
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../Chapter5/Spring.html">
+            
+                <a href="../Chapter5/Spring.html">
+            
+                    
+                    Spring
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../Chapter5/SpringBoot.html">
+            
+                <a href="../Chapter5/SpringBoot.html">
+            
+                    
+                    SpringBoot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../Chapter5/SpringCloud.html">
+            
+                <a href="../Chapter5/SpringCloud.html">
+            
+                    
+                    SpringCloud
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../Chapter6/">
+            
+                <a href="../Chapter6/">
+            
+                    
+                    DOCKER
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../Chapter7/">
+            
+                <a href="../Chapter7/">
+            
+                    
+                    NETTY
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >ConfigMap</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="configmap">ConfigMap</h1>
+<h2 id="1-configmap&#x7B80;&#x4ECB;">1. ConfigMap&#x7B80;&#x4ECB;</h2>
+<p>&#x5728;&#x6211;&#x4EEC;&#x90E8;&#x7F72;&#x4E00;&#x4E9B;&#x5E94;&#x7528;&#x670D;&#x52A1;&#x65F6;&#xFF0C;&#x901A;&#x5E38;&#x90FD;&#x4F1A;&#x6709;&#x4E00;&#x4E9B;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF0C;&#x800C;&#x5728;k8s&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x5982;&#x679C;&#x5728;&#x5C06;&#x8FD9;&#x4E9B;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x5199;&#x5230;&#x4EE3;&#x7801;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x4E2D;&#xFF0C;&#x9700;&#x8981;&#x4FEE;&#x6539;&#x914D;&#x7F6E;&#x7684;&#x8BDD;&#xFF0C;&#x6211;&#x4EEC;&#x8FD8;&#x5F97;&#x91CD;&#x65B0;&#x53BB;&#x4FEE;&#x6539;&#x4EE3;&#x7801;&#xFF0C;&#x91CD;&#x65B0;&#x5236;&#x4F5C;&#x4E00;&#x4E2A;&#x955C;&#x50CF;&#xFF0C;&#x8FD9;&#x6837;&#x64CD;&#x4F5C;&#x8D77;&#x6765;&#x5F88;&#x9EBB;&#x70E6;&#x3002;</p>
+<p>&#x8FD8;&#x597D;kubernetes&#x4E3A;&#x6211;&#x4EEC;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A;ConfigMap&#x8D44;&#x6E90;&#x5BF9;&#x8C61;&#xFF0C;&#x5B83;&#x7684;&#x4E3B;&#x8981;&#x4F5C;&#x7528;&#x5C31;&#x662F;&#x4E3A;&#x4E86;&#x8BA9;&#x955C;&#x50CF;&#x548C;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x89E3;&#x8026;&#xFF0C;&#x4EE5;&#x4FBF;&#x5B9E;&#x73B0;&#x955C;&#x50CF;&#x7684;&#x53EF;&#x79FB;&#x690D;&#x6027;&#x548C;&#x53EF;&#x590D;&#x7528;&#x6027;&#xFF0C;&#x63D0;&#x4F9B;&#x4E86;&#x5411;&#x5BB9;&#x5668;&#x4E2D;&#x6CE8;&#x5165;&#x914D;&#x7F6E;&#x4FE1;&#x606F;&#x7684;&#x80FD;&#x529B;&#xFF0C;&#x4E0D;&#x4EC5;&#x53EF;&#x4EE5;&#x7528;&#x6765;&#x4FDD;&#x5B58;&#x5355;&#x4E2A;&#x5C5E;&#x6027;&#xFF0C;&#x8FD8;&#x53EF;&#x4EE5;&#x7528;&#x6765;&#x4FDD;&#x5B58;&#x6574;&#x4E2A;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF0C;&#x6211;&#x4EEC;&#x53EA;&#x9700;&#x8981;&#x5C06;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4EE5;ConfigMap&#x7684;&#x65B9;&#x5F0F;&#x6302;&#x8F7D;&#x5230;&#x5E94;&#x7528;Pod&#x4E2D;&#xFF0C;&#x8FD9;&#x6837;&#x6211;&#x4EEC;&#x5728;&#x66F4;&#x65B0;&#x914D;&#x7F6E;&#x4FE1;&#x606F;&#x7684;&#x65F6;&#x5019;&#x53EA;&#x9700;&#x8981;&#x66F4;&#x65B0;&#x8FD9;&#x4E2A;ConfigMap&#x5BF9;&#x8C61;&#x5373;&#x53EF;&#x3002;</p>
+<p>ConfigMap&#x4F7F;&#x7528;&#x573A;&#x666F;&#xFF1A;</p>
+<ul>
+<li>&#x901A;&#x8FC7;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x7684;&#x65B9;&#x5F0F;&#xFF0C;&#x76F4;&#x63A5;&#x4F20;&#x9012;&#x7ED9;pod</li>
+<li>&#x901A;&#x8FC7;&#x5728;pod&#x7684;&#x547D;&#x4EE4;&#x884C;&#x4E0B;&#x8FD0;&#x884C;&#x7684;&#x65B9;&#x5F0F;(&#x542F;&#x52A8;&#x547D;&#x4EE4;&#x4E2D;)</li>
+<li>&#x4F5C;&#x4E3A;volume&#x7684;&#x65B9;&#x5F0F;&#x6302;&#x8F7D;&#x5230;pod&#x5185;</li>
+</ul>
+<h2 id="2-&#x521B;&#x5EFA;configmap">2. &#x521B;&#x5EFA;ConfigMap</h2>
+<h3 id="21-&#x901A;&#x8FC7;&#x76EE;&#x5F55;&#x521B;&#x5EFA;">2.1 &#x901A;&#x8FC7;&#x76EE;&#x5F55;&#x521B;&#x5EFA;</h3>
+<pre><code class="lang-bash">$ ls /app/web/configmap/kubectl/
+ftp.properties
+jdbc.properties
+
+$ cat /app/web/configmap/kubectl/ftp.properties
+FTP_ADDRESS=192.168.133.11
+FTP_PORT=21
+FTP_USERNAME=ftpuser
+FTP_PASSWORD=ftpuser
+FTP_BASEPATH=/
+IMAGE_BASE_URL=http://test.test.com/image
+
+$ cat /app/web/configmap/kubectl/jdbc.properties
+<span class="hljs-comment">#database configuration</span>
+connection.url=jdbc:mysql://10.1.133.111:3306/web
+connection.username=testdata
+<span class="hljs-comment">#connection.password=abcde</span>
+connection.password=SN9+koFJWHmf
+</code></pre>
+<p>&#x521B;&#x5EFA;Configmap&#x5BF9;&#x8C61;</p>
+<pre><code class="lang-bash">$ kubectl create configmap web-config --from-file=/app/web/configmap/kubectl
+</code></pre>
+<p><code>--from-file</code>&#xFF1A;&#x6307;&#x5B9A;&#x76EE;&#x5F55;&#x8DEF;&#x5F84;&#xFF0C;&#x8BE5;&#x76EE;&#x5F55;&#x4E0B;&#x7684;&#x6240;&#x6709;&#x6587;&#x4EF6;&#x90FD;&#x4F1A;&#x88AB;&#x7528;&#x5728;ConfigMap&#x91CC;&#x9762;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x952E;&#x503C;&#x5BF9;&#xFF0C;&#x952E;&#x7684;&#x540D;&#x5B57;&#x5C31;&#x662F;&#x6587;&#x4EF6;&#x540D;&#xFF0C;&#x503C;&#x5C31;&#x662F;&#x6587;&#x4EF6;&#x7684;&#x5185;&#x5BB9;&#x3002;
+&#x67E5;&#x770B;Configmap&#x4FE1;&#x606F;</p>
+<pre><code class="lang-bash">$ kubectl describe configmaps web-config
+Name:         web-config
+Namespace:    default
+Labels:       &lt;none&gt;
+Annotations:  &lt;none&gt;
+
+Data
+====
+ftp.properties:
+----
+FTP_ADDRESS=192.168.133.11
+FTP_PORT=21
+FTP_USERNAME=ftpuser
+FTP_PASSWORD=ftpuser
+FTP_BASEPATH=/
+IMAGE_BASE_URL=http://test.test.com/image
+
+jdbc.properties:
+----
+<span class="hljs-comment">#database configuration</span>
+connection.url=jdbc:mysql://10.1.133.111:3306/web
+connection.username=testdata
+<span class="hljs-comment">#connection.password=abcde</span>
+connection.password=SN9+koFJWHmf
+
+Events:  &lt;none&gt;
+</code></pre>
+<p>&#x5982;&#x679C;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4FE1;&#x606F;&#x8F83;&#x591A;&#x7684;&#x8BDD;&#xFF0C;describe&#x7684;&#x8F93;&#x51FA;&#x4FE1;&#x606F;&#x4F1A;&#x663E;&#x793A;&#x4E0D;&#x5168;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4EE5;&#x4E0B;&#x547D;&#x4EE4;&#x6765;&#x67E5;&#x770B;&#x5B8C;&#x6574;&#x5185;&#x5BB9;&#xFF1A;</p>
+<pre><code class="lang-yaml">$ kubectl get configmaps web-config -o yaml
+<span class="hljs-attr">apiVersion:</span> v1
+<span class="hljs-attr">data:</span>
+  ftp.properties: <span class="hljs-string">|
+    FTP_ADDRESS=192.168.133.11
+    FTP_PORT=21
+    FTP_USERNAME=ftpuser
+    FTP_PASSWORD=ftpuser
+    FTP_BASEPATH=/
+    IMAGE_BASE_URL=http://test.test.com/image
+  jdbc.properties: |
+    #database configuration
+    connection.url=jdbc:mysql://10.1.133.111:3306/web
+    connection.username=testdata
+    #connection.password=abcde
+    connection.password=SN9+koFJWHmf  
+</span><span class="hljs-attr">kind:</span> ConfigMap
+<span class="hljs-attr">metadata:</span>
+<span class="hljs-attr">  creationTimestamp:</span> <span class="hljs-number">2020</span><span class="hljs-bullet">-02</span><span class="hljs-bullet">-18</span>T18:<span class="hljs-number">34</span>:<span class="hljs-number">05</span>Z
+<span class="hljs-attr">  name:</span> web-config
+<span class="hljs-attr">  namespace:</span> default
+<span class="hljs-attr">  resourceVersion:</span> <span class="hljs-string">&quot;407&quot;</span>
+<span class="hljs-attr">  selfLink:</span> /api/v1/namespaces/default/configmaps/web-config
+<span class="hljs-attr">  uid:</span> <span class="hljs-number">680944725</span>-d62e<span class="hljs-bullet">-10e5</span><span class="hljs-bullet">-8</span>cd0<span class="hljs-bullet">-68</span>f123db1985
+</code></pre>
+<h3 id="22-&#x4F7F;&#x7528;&#x6587;&#x4EF6;&#x521B;&#x5EFA;">2.2 &#x4F7F;&#x7528;&#x6587;&#x4EF6;&#x521B;&#x5EFA;</h3>
+<pre><code class="lang-yaml">$ kubectl create configmap web-config<span class="hljs-bullet">-2</span> --from-file=/app/web/configmap/kubectl/ftp.properties 
+$ kubectl get configmaps web-config<span class="hljs-bullet">-2</span>  -o yaml
+<span class="hljs-attr">apiVersion:</span> v1
+<span class="hljs-attr">data:</span>
+  ftp.properties: |+
+    FTP_ADDRESS=<span class="hljs-number">192.168</span><span class="hljs-number">.133</span><span class="hljs-number">.11</span>
+    FTP_PORT=<span class="hljs-number">21</span>
+    FTP_USERNAME=ftpuser
+    FTP_PASSWORD=ftpuser
+    FTP_BASEPATH=/
+    IMAGE_BASE_URL=http://test.test.com/image
+
+<span class="hljs-attr">kind:</span> ConfigMap
+<span class="hljs-attr">metadata:</span>
+<span class="hljs-attr">  creationTimestamp:</span> <span class="hljs-string">&quot;2020-05-22T16:36:39Z&quot;</span>
+<span class="hljs-attr">  name:</span> web-config<span class="hljs-bullet">-2</span>
+<span class="hljs-attr">  namespace:</span> default
+<span class="hljs-attr">  resourceVersion:</span> <span class="hljs-string">&quot;33386795&quot;</span>
+<span class="hljs-attr">  selfLink:</span> /api/v1/namespaces/default/configmaps/web-config<span class="hljs-bullet">-2</span>
+<span class="hljs-attr">  uid:</span> cffef22c-be55<span class="hljs-bullet">-4</span>de3<span class="hljs-bullet">-8835</span><span class="hljs-bullet">-79195</span>de8ec7e
+</code></pre>
+<p><code>--from-file</code>&#xFF1A; &#x53EF;&#x4EE5;&#x591A;&#x6B21;&#x4F7F;&#x7528;&#xFF0C;&#x6307;&#x5B9A;&#x591A;&#x4E2A;&#x6587;&#x4EF6;</p>
+<h3 id="23-&#x4F7F;&#x7528;&#x547D;&#x4EE4;&#x884C;&#x521B;&#x5EFA;">2.3 &#x4F7F;&#x7528;&#x547D;&#x4EE4;&#x884C;&#x521B;&#x5EFA;</h3>
+<pre><code class="lang-yaml">$ kubectl create configmap web-config<span class="hljs-bullet">-3</span> --from-literal=FTP_ADDRESS=<span class="hljs-number">192.168</span><span class="hljs-number">.133</span><span class="hljs-number">.11</span>  --from-literal=FTP_PORT=<span class="hljs-number">21</span>  --from-literal=FTP_USERNAME=ftpuser   --from-literal=FTP_PASSWORD=ftpuser    --from-literal=FTP_BASEPATH=/  --from-literal=IMAGE_BASE_URL=http://test.test.com/image
+configmap/web-config<span class="hljs-bullet">-3</span> created
+$ kubectl get configmap web-config<span class="hljs-bullet">-3</span> -o yaml
+<span class="hljs-attr">apiVersion:</span> v1
+<span class="hljs-attr">data:</span>
+<span class="hljs-attr">  FTP_ADDRESS:</span> <span class="hljs-number">192.168</span><span class="hljs-number">.133</span><span class="hljs-number">.11</span>
+<span class="hljs-attr">  FTP_BASEPATH:</span> /
+<span class="hljs-attr">  FTP_PASSWORD:</span> ftpuser
+<span class="hljs-attr">  FTP_PORT:</span> <span class="hljs-string">&quot;21&quot;</span>
+<span class="hljs-attr">  FTP_USERNAME:</span> ftpuser
+<span class="hljs-attr">  IMAGE_BASE_URL:</span> http://test.test.com/image
+<span class="hljs-attr">kind:</span> ConfigMap
+<span class="hljs-attr">metadata:</span>
+<span class="hljs-attr">  creationTimestamp:</span> <span class="hljs-string">&quot;2020-05-22T16:46:50Z&quot;</span>
+<span class="hljs-attr">  name:</span> web-config<span class="hljs-bullet">-3</span>
+<span class="hljs-attr">  namespace:</span> default
+<span class="hljs-attr">  resourceVersion:</span> <span class="hljs-string">&quot;33387937&quot;</span>
+<span class="hljs-attr">  selfLink:</span> /api/v1/namespaces/default/configmaps/web-config<span class="hljs-bullet">-3</span>
+<span class="hljs-attr">  uid:</span> d69afbaf<span class="hljs-bullet">-0</span>ac4<span class="hljs-bullet">-4405</span>-a4ea<span class="hljs-bullet">-351</span>ad613bdb4
+</code></pre>
+<blockquote>
+<p> <code>--from-literal</code>&#xFF1A;&#x53EF;&#x4EE5;&#x591A;&#x6B21;&#x4F7F;&#x7528;&#xFF0C;&#x6307;&#x5B9A;&#x591A;&#x4E2A;&#x503C;</p>
+</blockquote>
+<h2 id="3-&#x4F7F;&#x7528;configmp">3. &#x4F7F;&#x7528;Configmp</h2>
+<h3 id="31-&#x4F7F;&#x7528;configmap&#x6765;&#x586B;&#x5145;&#x73AF;&#x5883;&#x53D8;&#x91CF;">3.1 &#x4F7F;&#x7528;ConfigMap&#x6765;&#x586B;&#x5145;&#x73AF;&#x5883;&#x53D8;&#x91CF;</h3>
+<p>&#x7F16;&#x5199;Pod&#x8D44;&#x6E90;&#x6587;&#x4EF6;&#xFF0C;&#x4F7F;&#x7528;&#x4E0A;&#x9762;&#x540D;&#x4E3A;web-config-3&#x7684;configmap</p>
+<pre><code class="lang-yaml"><span class="hljs-attr">apiVersion:</span> v1
+<span class="hljs-attr">kind:</span> Pod
+<span class="hljs-attr">metadata:</span>
+<span class="hljs-attr">  name:</span> testweb-pod
+<span class="hljs-attr">spec:</span>
+<span class="hljs-attr">  containers:</span>
+<span class="hljs-attr">    - name:</span> testweb
+<span class="hljs-attr">      image:</span> busybox
+<span class="hljs-attr">      command:</span> [ <span class="hljs-string">&quot;/bin/sh&quot;</span>, <span class="hljs-string">&quot;-c&quot;</span>, <span class="hljs-string">&quot;env&quot;</span> ]
+<span class="hljs-attr">      env:</span>
+<span class="hljs-attr">        - name:</span> FTP_ADDRESS
+<span class="hljs-attr">          valueFrom:</span>
+<span class="hljs-attr">            configMapKeyRef:</span>
+<span class="hljs-attr">              name:</span> web-config<span class="hljs-bullet">-3</span>
+<span class="hljs-attr">              key:</span> FTP_ADDRESS  <span class="hljs-comment">#configmap&#x7684;key&#x503C;</span>
+<span class="hljs-attr">        - name:</span> FTP_PORT
+<span class="hljs-attr">          valueFrom:</span>
+<span class="hljs-attr">            configMapKeyRef:</span>
+<span class="hljs-attr">              name:</span> web-config<span class="hljs-bullet">-3</span>
+<span class="hljs-attr">              key:</span> FTP_PORT
+<span class="hljs-attr">      envFrom:</span>
+<span class="hljs-attr">        - configMapRef:</span>   
+<span class="hljs-attr">            name:</span> web-config<span class="hljs-bullet">-3</span>  <span class="hljs-comment">#&#x4F7F;&#x7528;&#x540D;&#x4E3A;web-config-3&#x7684;configmap&#x5BF9;&#x8C61;</span>
+</code></pre>
+<p>&#x521B;&#x5EFA;Pod&#x5E76;&#x67E5;&#x770B;&#x65E5;&#x5FD7;</p>
+<pre><code class="lang-bash">$ kubectl  logs <span class="hljs-_">-f</span> testweb-pod
+--------
+FTP_ADDRESS=192.168.133.11
+IDLE_LLAMA_NGINX_INGRESS_DEFAULT_BACKEND_PORT_80_TCP=tcp://10.98.12.71:80
+PLUNDERING_MARMOT_NGINX_INGRESS_CONTROLLER_PORT_80_TCP_ADDR=10.108.129.64
+FTP_PORT=21
+MY_RELEASE_TOMCAT_PORT_80_TCP_ADDR=10.101.28.152
+KUBERNETES_PORT_443_TCP_ADDR=10.96.0.1
+
+FTP_USERNAME=ftpuser
+EXACERBATED_HEDGEHOG_NGINX_INGRESS_DEFAULT_BACKEND_SERVICE_PORT=80
+PLUNDERING_MARMOT_NGINX_INGRESS_CONTROLLER_PORT_80_TCP=tcp://10.108.129.64:80
+PLUNDERING_MARMOT_NGINX_INGRESS_CONTROLLER_PORT_443_TCP_ADDR=10.108.129.64
+MYDB_MYSQL_SERVICE_PORT_MYSQL=3306
+--------
+</code></pre>
+<h3 id="32-&#x4F7F;&#x7528;configmap&#x8BBE;&#x7F6E;&#x547D;&#x4EE4;&#x884C;&#x53C2;&#x6570;">3.2 &#x4F7F;&#x7528;ConfigMap&#x8BBE;&#x7F6E;&#x547D;&#x4EE4;&#x884C;&#x53C2;&#x6570;</h3>
+<pre><code class="lang-yaml"><span class="hljs-attr">apiVersion:</span> v1
+<span class="hljs-attr">kind:</span> Pod
+<span class="hljs-attr">metadata:</span>
+<span class="hljs-attr">  name:</span> testweb2-pod
+<span class="hljs-attr">spec:</span>
+<span class="hljs-attr">  containers:</span>
+<span class="hljs-attr">    - name:</span> testweb2
+<span class="hljs-attr">      image:</span> busybox
+<span class="hljs-attr">      command:</span> [ <span class="hljs-string">&quot;/bin/sh&quot;</span>, <span class="hljs-string">&quot;-c&quot;</span>, <span class="hljs-string">&quot;echo $(FTP_ADDRESS) $(FTP_PORT)&quot;</span> ]
+<span class="hljs-attr">      env:</span>
+<span class="hljs-attr">        - name:</span> FTP_ADDRESS
+<span class="hljs-attr">          valueFrom:</span>
+<span class="hljs-attr">            configMapKeyRef:</span>
+<span class="hljs-attr">              name:</span> web-config<span class="hljs-bullet">-3</span>
+<span class="hljs-attr">              key:</span> FTP_ADDRESS 
+<span class="hljs-attr">        - name:</span> FTP_PORT
+<span class="hljs-attr">          valueFrom:</span>
+<span class="hljs-attr">            configMapKeyRef:</span>
+<span class="hljs-attr">              name:</span> web-config<span class="hljs-bullet">-3</span>
+<span class="hljs-attr">              key:</span> FTP_PORT
+</code></pre>
+<p>&#x67E5;&#x770B;Pod&#x7684;&#x8F93;&#x51FA;&#x4FE1;&#x606F;</p>
+<pre><code class="lang-bash">kubectl  logs <span class="hljs-_">-f</span> testweb2-pod
+192.168.133.11 21
+</code></pre>
+<h3 id="33-&#x901A;&#x8FC7;&#x6570;&#x636E;&#x5377;&#x4F7F;&#x7528;configmap">3.3 &#x901A;&#x8FC7;&#x6570;&#x636E;&#x5377;&#x4F7F;&#x7528;ConfigMap</h3>
+<pre><code class="lang-yaml"><span class="hljs-attr">apiVersion:</span> v1
+<span class="hljs-attr">kind:</span> Pod
+<span class="hljs-attr">metadata:</span>
+<span class="hljs-attr">  name:</span> testweb3-pod
+<span class="hljs-attr">spec:</span>
+<span class="hljs-attr">  volumes:</span>
+<span class="hljs-attr">    - name:</span> config-volume
+<span class="hljs-attr">      configMap:</span>
+<span class="hljs-attr">        name:</span> web-config<span class="hljs-bullet">-2</span>
+<span class="hljs-attr">  containers:</span>
+<span class="hljs-attr">    - name:</span> testweb3
+<span class="hljs-attr">      image:</span> busybox
+<span class="hljs-attr">      command:</span> [ <span class="hljs-string">&quot;/bin/sh&quot;</span>, <span class="hljs-string">&quot;-c&quot;</span>, <span class="hljs-string">&quot;cat /etc/config/ftp.properties&quot;</span> ]
+<span class="hljs-attr">      volumeMounts:</span>
+<span class="hljs-attr">      - name:</span> config-volume
+<span class="hljs-attr">        mountPath:</span> /etc/config
+</code></pre>
+<p> &#x67E5;&#x770B;pod&#x8F93;&#x51FA;&#x65E5;&#x5FD7;</p>
+<pre><code class="lang-bash"> $ kubectl  logs <span class="hljs-_">-f</span> testweb3-pod
+FTP_ADDRESS=192.168.133.11
+FTP_PORT=21
+FTP_USERNAME=ftpuser
+FTP_PASSWORD=ftpuser
+FTP_BASEPATH=/
+IMAGE_BASE_URL=http://test.test.com/image
+</code></pre>
+<blockquote>
+<p>&#x6CE8;&#x610F;&#xFF0C;&#x5F53; ConfigMap &#x4EE5;&#x6570;&#x636E;&#x5377;&#x7684;&#x5F62;&#x5F0F;&#x6302;&#x8F7D;&#x8FDB; Pod &#x7684;&#x65F6;&#xFF0C;&#x8FD9;&#x65F6;&#x66F4;&#x65B0; ConfigMap&#xFF08;&#x6216;&#x5220;&#x6389;&#x91CD;&#x5EFA;ConfigMap&#xFF09;&#xFF0C;Pod &#x5185;&#x6302;&#x8F7D;&#x7684;&#x914D;&#x7F6E;&#x4FE1;&#x606F;&#x4F1A;&#x70ED;&#x66F4;&#x65B0;&#x3002;&#x8FD9;&#x65F6;&#x53EF;&#x4EE5;&#x589E;&#x52A0;&#x4E00;&#x4E9B;&#x76D1;&#x6D4B;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x53D8;&#x66F4;&#x7684;&#x811A;&#x672C;&#xFF0C;&#x7136;&#x540E;&#x91CD;&#x65B0;&#x52A0;&#x8F7D;&#x5BF9;&#x5E94;&#x670D;&#x52A1;&#x5C31;&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#x5E94;&#x7528;&#x7684;&#x70ED;&#x66F4;&#x65B0;&#x3002;</p>
+</blockquote>
+<p>cker&#x5230;Kubernetes&#x8FDB;&#x9636;-&#x9633;&#x660E;](<a href="https://www.qikqiak.com/k8s-book/docs/18.YAML%20%E6%96%87%E4%BB%B6.html" target="_blank">https://www.qikqiak.com/k8s-book/docs/18.YAML%20%E6%96%87%E4%BB%B6.html</a>)</p>
+<hr>
+<p>&#x5173;&#x6CE8;&#x516C;&#x4F17;&#x53F7;&#x56DE;&#x590D;&#x3010;k8s&#x3011;&#x83B7;&#x53D6;&#x89C6;&#x9891;&#x6559;&#x7A0B;&#x53CA;&#x66F4;&#x591A;&#x8D44;&#x6599;&#xFF1A;
+<img src="https://upload-images.jianshu.io/upload_images/9644303-52cdf2b971de1c50.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: Kubernets配置管理">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Secret.html" class="navigation navigation-next " aria-label="Next page: Secret">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"ConfigMap","level":"1.4.1","depth":2,"next":{"title":"Secret","level":"1.4.2","depth":2,"path":"Chapter3/Secret.md","ref":"Chapter3/Secret.md","articles":[]},"previous":{"title":"Kubernets配置管理","level":"1.4","depth":1,"path":"Chapter3/README.md","ref":"Chapter3/README.md","articles":[{"title":"ConfigMap","level":"1.4.1","depth":2,"path":"Chapter3/ConfigMap.md","ref":"Chapter3/ConfigMap.md","articles":[]},{"title":"Secret","level":"1.4.2","depth":2,"path":"Chapter3/Secret.md","ref":"Chapter3/Secret.md","articles":[]},{"title":"ServiceAccount","level":"1.4.3","depth":2,"path":"Chapter3/ServiceAccount.md","ref":"Chapter3/ServiceAccount.md","articles":[]},{"title":"RBAC","level":"1.4.4","depth":2,"path":"Chapter3/RBAC.md","ref":"Chapter3/RBAC.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Chapter3/ConfigMap.md","mtime":"2020-07-28T07:07:38.637Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-28T07:45:24.007Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

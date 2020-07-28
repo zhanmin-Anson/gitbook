@@ -1,0 +1,705 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>基本概念与组件原理 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="kubeadm.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Kubernetes基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.2.1" data-path="jieshao.html">
+            
+                <a href="jieshao.html">
+            
+                    
+                    基本概念与组件原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="kubeadm.html">
+            
+                <a href="kubeadm.html">
+            
+                    
+                    使用Kubeadm部署集群
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="YAML.html">
+            
+                <a href="YAML.html">
+            
+                    
+                    YAML文件语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="Pod.html">
+            
+                <a href="Pod.html">
+            
+                    
+                    深入理解Pod
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../Chapter2/">
+            
+                <a href="../Chapter2/">
+            
+                    
+                    Kubernetesb编排控制器
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../Chapter2/deployment.html">
+            
+                <a href="../Chapter2/deployment.html">
+            
+                    
+                    Deployment
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../Chapter2/StatefulSet.html">
+            
+                <a href="../Chapter2/StatefulSet.html">
+            
+                    
+                    StatefulSet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../Chapter2/DaemonSet.html">
+            
+                <a href="../Chapter2/DaemonSet.html">
+            
+                    
+                    DaemonSet
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../Chapter3/">
+            
+                <a href="../Chapter3/">
+            
+                    
+                    Kubernets配置管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../Chapter3/ConfigMap.html">
+            
+                <a href="../Chapter3/ConfigMap.html">
+            
+                    
+                    ConfigMap
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../Chapter3/Secret.html">
+            
+                <a href="../Chapter3/Secret.html">
+            
+                    
+                    Secret
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../Chapter3/ServiceAccount.html">
+            
+                <a href="../Chapter3/ServiceAccount.html">
+            
+                    
+                    ServiceAccount
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../Chapter3/RBAC.html">
+            
+                <a href="../Chapter3/RBAC.html">
+            
+                    
+                    RBAC
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../Chapter4/">
+            
+                <a href="../Chapter4/">
+            
+                    
+                    Kubernetes持久化存储
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../Chapter4/Pv.html">
+            
+                <a href="../Chapter4/Pv.html">
+            
+                    
+                    PV
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../Chapter4/PVC.html">
+            
+                <a href="../Chapter4/PVC.html">
+            
+                    
+                    PVC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../Chapter4/StorageClass.html">
+            
+                <a href="../Chapter4/StorageClass.html">
+            
+                    
+                    StorageClass
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../Chapter4/LocalPv.html">
+            
+                <a href="../Chapter4/LocalPv.html">
+            
+                    
+                    本地持久化存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../Chapter3/Ceph.html">
+            
+                <a href="../Chapter3/Ceph.html">
+            
+                    
+                    网络分布式存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../Chapter5/">
+            
+                <a href="../Chapter5/">
+            
+                    
+                    SPRING系列
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../Chapter5/Spring.html">
+            
+                <a href="../Chapter5/Spring.html">
+            
+                    
+                    Spring
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../Chapter5/SpringBoot.html">
+            
+                <a href="../Chapter5/SpringBoot.html">
+            
+                    
+                    SpringBoot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../Chapter5/SpringCloud.html">
+            
+                <a href="../Chapter5/SpringCloud.html">
+            
+                    
+                    SpringCloud
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../Chapter6/">
+            
+                <a href="../Chapter6/">
+            
+                    
+                    DOCKER
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../Chapter7/">
+            
+                <a href="../Chapter7/">
+            
+                    
+                    NETTY
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >基本概念与组件原理</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x57FA;&#x672C;&#x6982;&#x5FF5;&#x4E0E;&#x7EC4;&#x4EF6;&#x539F;&#x7406;">&#x57FA;&#x672C;&#x6982;&#x5FF5;&#x4E0E;&#x7EC4;&#x4EF6;&#x539F;&#x7406;</h1>
+<blockquote>
+<p>&#x53C2;&#x8003;&#x8D44;&#x6599;&#xFF1A;<a href="https://www.qikqiak.com/k8s-book/docs/18.YAML%20%E6%96%87%E4%BB%B6.html" target="_blank">&#x4ECE;Docker&#x5230;Kubernetes&#x8FDB;&#x9636;-&#x9633;&#x660E;</a></p>
+</blockquote>
+<h1 id="&#x4E00;-&#x4EC0;&#x4E48;&#x662F;kubernetes&#xFF1F;">&#x4E00;. &#x4EC0;&#x4E48;&#x662F;kubernetes&#xFF1F;</h1>
+<p><a href="https://kubernetes.io/zh/docs/" target="_blank">kubernetes</a>&#x662F;&#x4E00;&#x4E2A;&#x53EF;&#x79FB;&#x690D;&#x7684;&#xFF0C;&#x53EF;&#x6269;&#x5C55;&#x7684;&#x5F00;&#x6E90;&#x5E73;&#x53F0;&#xFF0C;&#x662F;Google&#x5F00;&#x6E90;&#x7684;&#x5BB9;&#x5668;&#x96C6;&#x7FA4;&#x7BA1;&#x7406;&#x7CFB;&#x7EDF;&#xFF08;&#x8C37;&#x6B4C;&#x5185;&#x90E8;:Borg)&#xFF0C;&#x7528;&#x4E8E;&#x7BA1;&#x7406;&#x5BB9;&#x5668;&#x5316;&#x7684;&#x5DE5;&#x4F5C;&#x8D1F;&#x8F7D;&#x548C;&#x670D;&#x52A1;&#xFF0C;&#x53EF;&#x4FC3;&#x8FDB;&#x58F0;&#x660E;&#x5F0F;&#x914D;&#x7F6E;&#x548C;&#x81EA;&#x52A8;&#x5316;&#x3002;</p>
+<h1 id="&#x4E8C;-&#x4E3A;&#x4EC0;&#x4E48;&#x4F7F;&#x7528;kubernetes&#xFF1F;">&#x4E8C;. &#x4E3A;&#x4EC0;&#x4E48;&#x4F7F;&#x7528;kubernetes&#xFF1F;</h1>
+<p>k8s&#x5728;Docker&#x6280;&#x672F;&#x7684;&#x57FA;&#x7840;&#x4E0A;&#xFF0C;&#x4E3A;&#x5BB9;&#x5668;&#x5316;&#x7684;&#x5E94;&#x7528;&#x63D0;&#x4F9B;&#x90E8;&#x7F72;&#x8FD0;&#x884C;&#x3001;&#x8D44;&#x6E90;&#x8C03;&#x5EA6;&#x3001;&#x670D;&#x52A1;&#x53D1;&#x73B0;&#x548C;&#x52A8;&#x6001;&#x4F38;&#x7F29;&#x7B49;&#x4E00;&#x7CFB;&#x5217;&#x5B8C;&#x6574;&#x529F;&#x80FD;&#xFF0C;&#x63D0;&#x9AD8;&#x4E86;&#x5927;&#x89C4;&#x6A21;&#x5BB9;&#x5668;&#x96C6;&#x7FA4;&#x7BA1;&#x7406;&#x7684;&#x4FBF;&#x6377;&#x6027;&#x3002;&#x540C;&#x65F6;Kubernetes&#x662F;&#x4E00;&#x4E2A;&#x5B8C;&#x5907;&#x7684;&#x5206;&#x5E03;&#x5F0F;&#x7CFB;&#x7EDF;&#x652F;&#x6491;&#x5E73;&#x53F0;&#xFF0C;&#x5177;&#x6709;&#x5B8C;&#x5907;&#x7684;&#x96C6;&#x7FA4;&#x7BA1;&#x7406;&#x80FD;&#x529B;&#xFF0C;&#x591A;&#x6269;&#x591A;&#x5C42;&#x6B21;&#x7684;&#x5B89;&#x5168;&#x9632;&#x62A4;&#x548C;&#x51C6;&#x5165;&#x673A;&#x5236;&#x3001;&#x591A;&#x79DF;&#x6237;&#x5E94;&#x7528;&#x652F;&#x6491;&#x80FD;&#x529B;&#x3001;&#x900F;&#x660E;&#x7684;&#x670D;&#x52A1;&#x6CE8;&#x518C;&#x548C;&#x53D1;&#x73B0;&#x673A;&#x5236;&#x3001;&#x5167;&#x5EFA;&#x667A;&#x80FD;&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#x5668;&#x3001;&#x5F3A;&#x5927;&#x7684;&#x6545;&#x969C;&#x53D1;&#x73B0;&#x548C;&#x81EA;&#x6211;&#x4FEE;&#x590D;&#x80FD;&#x529B;&#x3001;&#x670D;&#x52A1;&#x6EDA;&#x52A8;&#x5347;&#x7EA7;&#x548C;&#x5728;&#x7EBF;&#x6269;&#x5BB9;&#x80FD;&#x529B;&#x3001;&#x53EF;&#x6269;&#x5C55;&#x7684;&#x8D44;&#x6E90;&#x81EA;&#x52A8;&#x8C03;&#x5EA6;&#x673A;&#x5236;&#x4EE5;&#x53CA;&#x591A;&#x7C92;&#x5EA6;&#x7684;&#x8D44;&#x6E90;&#x914D;&#x989D;&#x7BA1;&#x7406;&#x80FD;&#x529B;&#x3002;&#x540C;&#x65F6;Kubernetes&#x63D0;&#x4F9B;&#x5B8C;&#x5584;&#x7684;&#x7BA1;&#x7406;&#x5DE5;&#x5177;&#xFF0C;&#x6DB5;&#x76D6;&#x4E86;&#x5305;&#x62EC;&#x5F00;&#x53D1;&#x3001;&#x90E8;&#x7F72;&#x6D4B;&#x8BD5;&#x3001;&#x8FD0;&#x7EF4;&#x76D1;&#x63A7;&#x5728;&#x5185;&#x7684;&#x5404;&#x4E2A;&#x73AF;&#x8282;&#x3002;</p>
+<h1 id="&#x4E09;-&#x96C6;&#x7FA4;&#x67B6;&#x6784;&#x53CA;&#x7EC4;&#x4EF6;">&#x4E09;. &#x96C6;&#x7FA4;&#x67B6;&#x6784;&#x53CA;&#x7EC4;&#x4EF6;</h1>
+<h2 id="1-&#x96C6;&#x7FA4;&#x67B6;&#x6784;">1. &#x96C6;&#x7FA4;&#x67B6;&#x6784;</h2>
+<p><img src="https://upload-images.jianshu.io/upload_images/9644303-68fd2a486214d371?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="&#x516C;&#x4F17;&#x53F7;: &#x524D;&#x884C;&#x6280;&#x672F;&#x5708;"></p>
+<p> <strong>Master</strong>
+&#x8D1F;&#x8D23;&#x7BA1;&#x7406;&#x96C6;&#x7FA4;&#xFF0C;&#x90E8;&#x7F72;&#x96C6;&#x7FA4;&#x6240;&#x9700;&#x7EC4;&#x4EF6;<code>etcd&#xFF0C;apiserver&#xFF0C;controller manager&#xFF0C;scheduler</code>&#x3002;master &#x534F;&#x8C03;&#x96C6;&#x7FA4;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x6D3B;&#x52A8;&#xFF0C;&#x4F8B;&#x5982;&#x8C03;&#x5EA6;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x3001;&#x7EF4;&#x62A4;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x7684;&#x6240;&#x9700;&#x72B6;&#x6001;&#x3001;&#x6269;&#x5C55;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x548C;&#x6EDA;&#x52A8;&#x66F4;&#x65B0;&#x3002;</p>
+<p> <strong>Node</strong>
+&#x8282;&#x70B9;&#x662F; Kubernetes &#x96C6;&#x7FA4;&#x4E2D;&#x7684;&#x5DE5;&#x4F5C;&#x8282;&#x70B9;&#xFF0C;&#x7528;&#x4E8E;&#x6258;&#x7BA1;&#x6B63;&#x5728;&#x8FD0;&#x884C;&#x7684;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#xFF0C;&#x53EF;&#x4EE5;&#x662F;&#x7269;&#x7406;&#x673A;&#x6216;&#x865A;&#x62DF;&#x673A;&#x3002; &#x6BCF;&#x4E2A;&#x5DE5;&#x4F5C;&#x8282;&#x70B9;&#x90FD;&#x6709;&#x4E00;&#x4E2A; <code>kubelet</code>&#x548C;<code>kube-proxy</code>&#xFF0C;&#x5B83;&#x662F;&#x7BA1;&#x7406;&#x8282;&#x70B9;&#x5E76;&#x4E0E; Kubernetes Master &#x8282;&#x70B9;&#x8FDB;&#x884C;&#x901A;&#x4FE1;&#x7684;&#x4EE3;&#x7406;&#x3002;&#x8282;&#x70B9;&#x4E0A;&#x8FD8;&#x5E94;&#x5177;&#x6709;&#x5904;&#x7406;&#x5BB9;&#x5668;&#x64CD;&#x4F5C;&#x7684;&#x5BB9;&#x5668;&#x8FD0;&#x884C;&#x65F6;&#xFF0C;&#x4F8B;&#x5982; Docker &#x6216; rkt&#x3002;&#x4E00;&#x4E2A; Kubernetes &#x5DE5;&#x4F5C;&#x96C6;&#x7FA4;&#x81F3;&#x5C11;&#x6709;&#x4E09;&#x4E2A;&#x8282;&#x70B9;&#x3002;</p>
+<h2 id="2-&#x96C6;&#x7FA4;&#x7EC4;&#x4EF6;">2. &#x96C6;&#x7FA4;&#x7EC4;&#x4EF6;</h2>
+<ul>
+<li>etcd&#xFF1A; &#x952E;&#x503C;&#x5B58;&#x50A8;&#x6570;&#x636E;&#x5E93;&#xFF0C;&#x7EF4;&#x62A4;&#x96C6;&#x7FA4;&#x5185;&#x5404;&#x4E2A;&#x8282;&#x70B9;&#x72B6;&#x6001;&#x7684;&#x4E00;&#x81F4;&#x6027;&#xFF0C;&#x4FDD;&#x5B58;&#x96C6;&#x7FA4;&#x7684;&#x72B6;&#x6001;&#x53CA;&#x914D;&#x7F6E;&#xFF1B;</li>
+<li>apiserver&#xFF1A;&#x5904;&#x7406;&#x8D44;&#x6E90;&#x64CD;&#x4F5C;&#x7684;&#x8BF7;&#x6C42;&#xFF0C;&#x5E76;&#x63D0;&#x4F9B;&#x8BA4;&#x8BC1;&#x3001;&#x6388;&#x6743;&#x3001;&#x8BBF;&#x95EE;&#x63A7;&#x5236;&#x3001;API &#x6CE8;&#x518C;&#x548C;&#x53D1;&#x73B0;&#x7B49;&#x673A;&#x5236;&#xFF1B;</li>
+<li>controller manager&#xFF1A; &#x63A7;&#x5236;&#x5668;&#x7BA1;&#x7406;&#xFF0C;&#x8D1F;&#x8D23;&#x7EF4;&#x62A4;&#x96C6;&#x7FA4;&#x7684;&#x72B6;&#x6001;&#xFF0C;&#x5982;&#x6545;&#x969C;&#x68C0;&#x6D4B;&#x3001;&#x81EA;&#x52A8;&#x6269;&#x5C55;&#x3001;&#x6EDA;&#x52A8;&#x66F4;&#x65B0;&#x7B49;&#xFF1B;</li>
+<li>scheduler&#xFF1A;&#x8C03;&#x5EA6;&#x5668;&#xFF0C;&#x8D1F;&#x8D23;&#x8D44;&#x6E90;&#x7684;&#x8C03;&#x5EA6;&#xFF0C;&#x6309;&#x7167;&#x9884;&#x5B9A;&#x7684;&#x8C03;&#x5EA6;&#x7B56;&#x7565;&#x5C06; Pod &#x8C03;&#x5EA6;&#x5230;&#x76F8;&#x5E94;&#x7684;&#x8282;&#x70B9;&#xFF1B;</li>
+<li>kubelet&#xFF1A;&#x8D1F;&#x8D23;&#x7EF4;&#x62A4;&#x5BB9;&#x5668;&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;&#xFF0C; Pod &#x7684;&#x521B;&#x5EFA;&#x3001;&#x542F;&#x52A8;&#x3001;&#x76D1;&#x63A7;&#x3001;&#x91CD;&#x542F;&#x3001;&#x9500;&#x6BC1;&#x7B49;&#x5DE5;&#x4F5C;&#xFF0C;&#x5904;&#x7406;Master&#x8282;&#x70B9;&#x4E0B;&#x53D1;&#x5230;&#x672C;&#x8282;&#x70B9;&#x7684;&#x4EFB;&#x52A1;&#xFF1B;</li>
+<li>Container runtime&#xFF1A; &#x8D1F;&#x8D23;&#x955C;&#x50CF;&#x7BA1;&#x7406;&#x4EE5;&#x53CA; Pod &#x548C;&#x5BB9;&#x5668;&#x7684;&#x771F;&#x6B63;&#x8FD0;&#x884C;&#xFF08;CRI&#xFF09;&#xFF1B;</li>
+<li>kube-proxy&#xFF1A; &#x8D1F;&#x8D23;&#x4E3A; Service &#x63D0;&#x4F9B; cluster &#x5185;&#x90E8;&#x7684;&#x670D;&#x52A1;&#x53D1;&#x73B0;&#x548C;&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#xFF1B;</li>
+<li>Flannel/calico&#xFF1A;&#x7F51;&#x7EDC;&#x63D2;&#x4EF6;&#xFF0C; &#x8D1F;&#x8D23;&#x4E3A;&#x6574;&#x4E2A;&#x96C6;&#x7FA4;&#x63D0;&#x4F9B; IP &#x670D;&#x52A1;&#xFF1B;</li>
+<li>kube-dns/coredns&#xFF1A; &#x8D1F;&#x8D23;&#x4E3A;&#x6574;&#x4E2A;&#x96C6;&#x7FA4;&#x63D0;&#x4F9B; DNS &#x670D;&#x52A1;&#xFF1B;</li>
+<li>Ingress Controller&#xFF1A; &#x4E3A;&#x670D;&#x52A1;&#x63D0;&#x4F9B;&#x5916;&#x7F51;&#x5165;&#x53E3;&#xFF1B;<h1 id="&#x56DB;-&#x96C6;&#x7FA4;&#x5DE5;&#x4F5C;&#x6D41;&#x7A0B;">&#x56DB;. &#x96C6;&#x7FA4;&#x5DE5;&#x4F5C;&#x6D41;&#x7A0B;</h1>
+&#x96C6;&#x7FA4;&#x5404;&#x7EC4;&#x4EF6;&#x7684;&#x901A;&#x4FE1;&#x539F;&#x7406;&#xFF0C;&#x4EE5;&#x521B;&#x5EFA;Pod&#x4E3A;&#x4F8B;&#xFF1A;
+<img src="https://upload-images.jianshu.io/upload_images/9644303-87ad770fac8f5f5b?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="&#x516C;&#x4F17;&#x53F7;&#xFF1A;&#x524D;&#x884C;&#x6280;&#x672F;&#x5708;"></li>
+<li>&#x4F7F;&#x7528;REST API &#x521B;&#x5EFA;Pod&#xFF0C;&#x5373;(kubectl create pod)&#x8BF7;&#x6C42;apiserver&#x3002;</li>
+<li>apiserver&#x63A5;&#x6536;&#x5230;pod&#x521B;&#x5EFA;&#x8BF7;&#x6C42;&#x540E;&#xFF0C;&#x5199;&#x5165;&#x5230;Etcd&#xFF0C;&#x4F1A;&#x5B58;&#x5728;&#x8BB0;&#x5F55;&#x4F46;&#x4E0D;&#x4F1A;&#x521B;&#x5EFA;&#x3002;</li>
+<li>scheduluer &#x68C0;&#x6D4B;&#x5230;&#x6709;&#x672A;&#x7ED1;&#x5B9A; Node &#x7684; Pod&#xFF0C;&#x67E5;&#x627E;&#x96C6;&#x7FA4;&#x4E2D;&#x8D44;&#x6E90;&#x5145;&#x8DB3;&#x7684;Node&#x7ED1;&#x5B9A;&#xFF0C;&#x5E76;&#x5C06;&#x8C03;&#x5EA6;&#x4FE1;&#x606F;&#x5199;&#x5165;&#x5230;Etcd&#x3002;</li>
+<li>kubelet &#x901A;&#x8FC7;&#x76D1;&#x6D4B;etcd&#x6570;&#x636E;&#x5E93;&#xFF0C;&#x68C0;&#x6D4B;&#x5230;&#x6709;&#x7ED1;&#x5B9A;&#x8BE5;&#x8282;&#x70B9;&#x7684;Pod&#x8C03;&#x5EA6;&#x8FC7;&#x6765;&#x9700;&#x8981;&#x521B;&#x5EFA;&#xFF0C;&#x8C03;&#x7528;container runtime &#x8FD0;&#x884C;&#x8BE5; Pod&#x3002;</li>
+<li>kubelet &#x901A;&#x8FC7; container runtime &#x53D6;&#x5230; Pod &#x72B6;&#x6001;&#xFF0C;&#x5E76;&#x66F4;&#x65B0;&#x5230; apiserver &#x4E2D;&#x3002;<h1 id="&#x4E94;-&#x57FA;&#x672C;&#x6982;&#x5FF5;">&#x4E94;. &#x57FA;&#x672C;&#x6982;&#x5FF5;</h1>
+Kubernetes&#x4E2D;&#x7684;&#x7EDD;&#x5927;&#x90E8;&#x5206;&#x6982;&#x5FF5;&#x90FD;&#x4F1A;&#x88AB;&#x62BD;&#x8C61;&#x6210;Kubernetes&#x7BA1;&#x7406;&#x7684;&#x4E00;&#x79CD;&#x8D44;&#x6E90;&#x5BF9;&#x8C61;&#xFF0C;&#x4E0B;&#x56FE;&#x4E3A;k8s&#x8D44;&#x6E90;&#x5BF9;&#x8C61;&#x5168;&#x666F;&#x56FE;</li>
+</ul>
+<p><img src="https://upload-images.jianshu.io/upload_images/9644303-c86138f893b91e15?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="&#x516C;&#x4F17;&#x53F7;&#xFF1A;&#x524D;&#x884C;&#x6280;&#x672F;&#x5708;"></p>
+<h2 id="1-&#x76F8;&#x5173;&#x540D;&#x8BCD;">1. &#x76F8;&#x5173;&#x540D;&#x8BCD;</h2>
+<h3 id="namespace">NameSpace</h3>
+<p>Namespace &#x547D;&#x540D;&#x7A7A;&#x95F4;&#x662F;&#x5BF9;&#x4E00;&#x7EC4;&#x8D44;&#x6E90;&#x548C;&#x5BF9;&#x8C61;&#x7684;&#x62BD;&#x8C61;&#x96C6;&#x5408;&#xFF0C; &#x662F; Linux &#x5185;&#x6838;&#x7528;&#x6765;&#x9694;&#x79BB;&#x5185;&#x6838;&#x8D44;&#x6E90;&#x7684;&#x65B9;&#x5F0F;&#x3002;NameSpace&#x505A;&#x9694;&#x79BB;&#xFF0C;Cgroups &#x505A;&#x9650;&#x5236;&#xFF0C;rootfs &#x505A;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x3002;</p>
+<h3 id="label">Label</h3>
+<p>Label &#x6807;&#x7B7E;&#x4EE5; key/value &#x7684;&#x65B9;&#x5F0F;&#x9644;&#x52A0;&#x5230;&#x8D44;&#x6E90;&#x5BF9;&#x8C61;&#x4E0A;&#x5982;Pod&#xFF0C; &#x5176;&#x4ED6;&#x5BF9;&#x8C61;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; Label Selector &#x6765;&#x9009;&#x62E9;&#x4E00;&#x7EC4;&#x76F8;&#x540C; label &#x7684;&#x5BF9;&#x8C61;&#x3002;</p>
+<h2 id="2&#x7F16;&#x6392;&#x5BF9;&#x8C61;">2.&#x7F16;&#x6392;&#x5BF9;&#x8C61;</h2>
+<h3 id="pod">Pod</h3>
+<p>Pod&#x662F; Kubernetes &#x9879;&#x76EE;&#x4E2D;&#x6700;&#x5C0F;&#x7684; API &#x8D44;&#x6E90;&#x5BF9;&#x8C61;&#xFF0C;Pod&#x53EF;&#x4EE5;&#x7531;&#x4E00;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x4E1A;&#x52A1;&#x5BB9;&#x5668;&#x548C;&#x4E00;&#x4E2A;&#x6839;&#x5BB9;&#x5668;(Pause&#x5BB9;&#x5668;)&#x7EC4;&#x6210;&#x3002;&#x4E00;&#x4E2A;Pod&#x8868;&#x793A;&#x67D0;&#x4E2A;&#x5E94;&#x7528;&#x7684;&#x4E00;&#x4E2A;&#x5B9E;&#x4F8B;&#x3002;Kubernetes &#x9879;&#x76EE;&#x7684;&#x8C03;&#x5EA6;&#x5668;&#xFF0C;&#x662F;&#x7EDF;&#x4E00;&#x6309;&#x7167; Pod &#x800C;&#x975E;&#x5BB9;&#x5668;&#x7684;&#x8D44;&#x6E90;&#x9700;&#x6C42;&#x8FDB;&#x884C;&#x8BA1;&#x7B97;&#x7684;&#xFF0C;&#x51E1;&#x662F;&#x8C03;&#x5EA6;&#x3001;&#x7F51;&#x7EDC;&#x3001;&#x5B58;&#x50A8;&#xFF0C;&#x4EE5;&#x53CA;&#x5B89;&#x5168;&#x76F8;&#x5173;&#x7684;&#x5C5E;&#x6027;&#xFF0C;&#x57FA;&#x672C;&#x4E0A;&#x662F; Pod &#x7EA7;&#x522B;&#x7684;&#x3002;</p>
+<p>&#x53EF;&#x4EE5;&#x8FD9;&#x6837;&#x7406;&#x89E3;&#xFF0C;&#x4E91;&#x8BA1;&#x7B97;&#x7CFB;&#x7EDF;&#x7684;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x662F; k8s &#xFF0C;&#x5BB9;&#x5668;&#x5C31;&#x76F8;&#x5F53;&#x4E8E;&#x662F;&#x5176;&#x8FDB;&#x7A0B;&#xFF0C;&#x800C; Pod &#x5219;&#x662F;&#x8FDB;&#x7A0B;&#x7EC4;&#xFF0C;&#x5BB9;&#x5668;&#x955C;&#x50CF;&#x5C31;&#x662F;&#x8FD9;&#x4E2A;&#x7CFB;&#x7EDF;&#x91CC;&#x7684;&#x201C;.exe&#x201D;&#x5B89;&#x88C5;&#x5305;&#x3002;Pod &#x91CC;&#x7684;&#x6240;&#x6709;&#x5BB9;&#x5668;&#xFF0C;&#x5B83;&#x4EEC;&#x5171;&#x4EAB;PID&#x3001;IPC&#x3001;Network&#x548C;UTS namespace&#xFF0C;&#x53EF;&#x4EE5;&#x58F0;&#x660E;&#x5171;&#x4EAB;&#x540C;&#x4E00;&#x4E2A; Volume&#x3002;</p>
+<h3 id="replicaset">ReplicaSet</h3>
+<p> ReplicaSet&#x662F;Pod&#x526F;&#x672C;&#x7684;&#x62BD;&#x8C61;&#xFF0C;&#x7528;&#x4E8E;&#x89E3;&#x51B3;Pod&#x7684;&#x6269;&#x5BB9;&#x548C;&#x4F38;&#x7F29;&#x3002;</p>
+<h3 id="deployment">Deployment</h3>
+<p>Deployment&#x901A;&#x5E38;&#x7528;&#x6765;&#x90E8;&#x7F72;&#x65E0;&#x72B6;&#x6001;&#x5E94;&#x7528;&#xFF0C;&#x5982;Web&#x670D;&#x52A1;&#xFF0C; &#x8BE5;&#x670D;&#x52A1;&#x8FD0;&#x884C;&#x7684;&#x5B9E;&#x4F8B;&#x4E0D;&#x4F1A;&#x5728;&#x672C;&#x5730;&#x5B58;&#x50A8;&#x9700;&#x8981;&#x6301;&#x4E45;&#x5316;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x5E76;&#x4E14;&#x591A;&#x4E2A;&#x5B9E;&#x4F8B;&#x5BF9;&#x4E8E;&#x540C;&#x4E00;&#x4E2A;&#x8BF7;&#x6C42;&#x54CD;&#x5E94;&#x7684;&#x7ED3;&#x679C;&#x662F;&#x5B8C;&#x5168;&#x4E00;&#x81F4;&#x7684;&#x3002;&#x5728;&#x5185;&#x90E8;&#x4F7F;&#x7528;ReplicaSet&#x6765;&#x5B9E;&#x73B0;Pod&#x526F;&#x672C;&#x7684;&#x521B;&#x5EFA;&#x3002;Deployment&#x786E;&#x4FDD;&#x6307;&#x5B9A;&#x6570;&#x91CF;&#x7684;Pod&#x201C;&#x526F;&#x672C;&#x201D;&#x5728;&#x8FD0;&#x884C;&#xFF0C;&#x5E76;&#x4E14;&#x652F;&#x6301;&#x56DE;&#x6EDA;&#x548C;&#x6EDA;&#x52A8;&#x5347;&#x7EA7;&#x3002;
+&#x521B;&#x5EFA;Deployment&#x65F6;&#xFF0C;&#x9700;&#x8981;&#x6307;&#x5B9A; Pod&#x6A21;&#x677F;&#x548C;Label&#x6807;&#x7B7E;&#x3002;</p>
+<h3 id="statefulset">StatefulSet</h3>
+<p>StatefulSet&#x901A;&#x5E38;&#x7528;&#x6765;&#x90E8;&#x7F72;&#x6709;&#x72B6;&#x6001;&#x5E94;&#x7528;&#xFF0C;&#x5982;Mysql&#x670D;&#x52A1;&#xFF0C;&#x670D;&#x52A1;&#x8FD0;&#x884C;&#x7684;&#x5B9E;&#x4F8B;&#x9700;&#x8981;&#x5728;&#x672C;&#x5730;&#x5B58;&#x50A8;&#x6301;&#x4E45;&#x5316;&#x6570;&#x636E;&#xFF0C;&#x591A;&#x4E2A;&#x5B9E;&#x4F8B;&#x4E4B;&#x95F4;&#x6709;&#x4F9D;&#x8D56;&#x62D3;&#x6251;&#x5173;&#x7CFB;&#xFF0C;&#x6BD4;&#x5982;&#xFF1A;&#x4E3B;&#x4ECE;&#x5173;&#x7CFB;&#x3001;&#x4E3B;&#x5907;&#x5173;&#x7CFB;&#x3002;&#x5982;&#x679C;&#x505C;&#x6B62;&#x6389;&#x4F9D;&#x8D56;&#x4E2D;&#x7684;&#x4E00;&#x4E2A;Pod&#xFF0C;&#x5C31;&#x4F1A;&#x5BFC;&#x81F4;&#x6570;&#x636E;&#x4E22;&#x5931;&#x6216;&#x8005;&#x96C6;&#x7FA4;&#x5D29;&#x6E83;&#x3002;&#x4ED6;&#x7684;&#x6838;&#x5FC3;&#x529F;&#x80FD;&#x5C31;&#x662F;&#x901A;&#x8FC7;&#x67D0;&#x79CD;&#x65B9;&#x5F0F;&#x8BB0;&#x5F55;&#x8FD9;&#x4E9B;&#x72B6;&#x6001;&#xFF0C;&#x7136;&#x540E;&#x5728; Pod &#x88AB;&#x91CD;&#x65B0;&#x521B;&#x5EFA;&#x65F6;&#xFF0C;&#x80FD;&#x591F;&#x4E3A;&#x65B0; Pod &#x6062;&#x590D;&#x8FD9;&#x4E9B;&#x72B6;&#x6001;&#x3002;&#x5B83;&#x5305;&#x542B;Deployment&#x63A7;&#x5236;&#x5668;ReplicaSet&#x7684;&#x6240;&#x6709;&#x529F;&#x80FD;&#xFF0C;&#x589E;&#x52A0;&#x53EF;&#x4EE5;&#x5904;&#x7406;Pod&#x7684;&#x542F;&#x52A8;&#x987A;&#x5E8F;&#xFF0C;&#x4E3A;&#x4FDD;&#x7559;&#x6BCF;&#x4E2A;Pod&#x7684;&#x72B6;&#x6001;&#x8BBE;&#x7F6E;&#x552F;&#x4E00;&#x6807;&#x8BC6;&#xFF0C;&#x540C;&#x65F6;&#x5177;&#x6709;&#x4EE5;&#x4E0B;&#x529F;&#x80FD;&#xFF1A;</p>
+<ul>
+<li>&#x7A33;&#x5B9A;&#x7684;&#x3001;&#x552F;&#x4E00;&#x7684;&#x7F51;&#x7EDC;&#x6807;&#x8BC6;&#x7B26;</li>
+<li>&#x7A33;&#x5B9A;&#x7684;&#x3001;&#x6301;&#x4E45;&#x5316;&#x7684;&#x5B58;&#x50A8;</li>
+<li>&#x6709;&#x5E8F;&#x7684;&#x3001;&#x4F18;&#x96C5;&#x7684;&#x90E8;&#x7F72;&#x548C;&#x7F29;&#x653E;<h3 id="daemonset">DaemonSet</h3>
+DaemonSet&#xFF1A;&#x670D;&#x52A1;&#x5B88;&#x62A4;&#x8FDB;&#x7A0B;&#xFF0C;&#x5B83;&#x7684;&#x4E3B;&#x8981;&#x4F5C;&#x7528;&#x662F;&#x5728;Kubernetes&#x96C6;&#x7FA4;&#x7684;&#x6240;&#x6709;&#x8282;&#x70B9;&#x4E2D;&#x8FD0;&#x884C;&#x6211;&#x4EEC;&#x90E8;&#x7F72;&#x7684;&#x5B88;&#x62A4;&#x8FDB;&#x7A0B;&#xFF0C;&#x76F8;&#x5F53;&#x4E8E;&#x5728;&#x96C6;&#x7FA4;&#x8282;&#x70B9;&#x4E0A;&#x5206;&#x522B;&#x90E8;&#x7F72;Pod&#x526F;&#x672C;&#xFF0C;&#x5982;&#x679C;&#x6709;&#x65B0;&#x8282;&#x70B9;&#x52A0;&#x5165;&#x96C6;&#x7FA4;&#xFF0C;Daemonset&#x4F1A;&#x81EA;&#x52A8;&#x7684;&#x5728;&#x8BE5;&#x8282;&#x70B9;&#x4E0A;&#x8FD0;&#x884C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x90E8;&#x7F72;&#x7684;Pod&#x526F;&#x672C;&#xFF0C;&#x76F8;&#x53CD;&#x5982;&#x679C;&#x6709;&#x8282;&#x70B9;&#x9000;&#x51FA;&#x96C6;&#x7FA4;&#xFF0C;Daemonset&#x4E5F;&#x4F1A;&#x79FB;&#x9664;&#x6389;&#x90E8;&#x7F72;&#x5728;&#x65E7;&#x8282;&#x70B9;&#x7684;Pod&#x526F;&#x672C;&#x3002;</li>
+</ul>
+<p>DaemonSet&#x7684;&#x4E3B;&#x8981;&#x7279;&#x5F81;&#xFF1A;</p>
+<ul>
+<li>&#x8FD9;&#x4E2A; Pod &#x8FD0;&#x884C;&#x5728; Kubernetes &#x96C6;&#x7FA4;&#x91CC;&#x7684;&#x6BCF;&#x4E00;&#x4E2A;&#x8282;&#x70B9;&#xFF08;Node&#xFF09;&#x4E0A;&#xFF1B;</li>
+<li>&#x6BCF;&#x4E2A;&#x8282;&#x70B9;&#x4E0A;&#x53EA;&#x4F1A;&#x8FD0;&#x884C;&#x4E00;&#x4E2A;&#x8FD9;&#x6837;&#x7684; Pod &#x5B9E;&#x4F8B;&#xFF1B;</li>
+<li>&#x5982;&#x679C;&#x65B0;&#x7684;&#x8282;&#x70B9;&#x52A0;&#x5165; Kubernetes &#x96C6;&#x7FA4;&#x540E;&#xFF0C;&#x8BE5; Pod &#x4F1A;&#x81EA;&#x52A8;&#x5730;&#x5728;&#x65B0;&#x8282;&#x70B9;&#x4E0A;&#x88AB;&#x521B;&#x5EFA;&#x51FA;&#x6765;&#xFF1B;</li>
+<li>&#x800C;&#x5F53;&#x65E7;&#x8282;&#x70B9;&#x88AB;&#x5220;&#x9664;&#x540E;&#xFF0C;&#x5B83;&#x4E0A;&#x9762;&#x7684; Pod &#x4E5F;&#x76F8;&#x5E94;&#x5730;&#x4F1A;&#x88AB;&#x56DE;&#x6536;&#x6389;&#x3002;</li>
+</ul>
+<p>DaemonSet&#x5E38;&#x7528;&#x573A;&#x666F;&#xFF1A;</p>
+<ul>
+<li>&#x7F51;&#x7EDC;&#x63D2;&#x4EF6;&#x7684; Agent &#x7EC4;&#x4EF6;&#xFF0C;&#x5982;&#xFF08;Flannel&#xFF0C;Calico&#xFF09;&#x9700;&#x8981;&#x8FD0;&#x884C;&#x5728;&#x6BCF;&#x4E00;&#x4E2A;&#x8282;&#x70B9;&#x4E0A;&#xFF0C;&#x7528;&#x6765;&#x5904;&#x7406;&#x8FD9;&#x4E2A;&#x8282;&#x70B9;&#x4E0A;&#x7684;&#x5BB9;&#x5668;&#x7F51;&#x7EDC;&#xFF1B;</li>
+<li>&#x5B58;&#x50A8;&#x63D2;&#x4EF6;&#x7684; Agent &#x7EC4;&#x4EF6;&#xFF0C;&#x5982;&#xFF08;Ceph&#xFF0C;Glusterfs&#xFF09;&#x9700;&#x8981;&#x8FD0;&#x884C;&#x5728;&#x6BCF;&#x4E00;&#x4E2A;&#x8282;&#x70B9;&#x4E0A;&#xFF0C;&#x7528;&#x6765;&#x5728;&#x8FD9;&#x4E2A;&#x8282;&#x70B9;&#x4E0A;&#x6302;&#x8F7D;F&#x8FDC;&#x7A0B;&#x5B58;&#x50A8;&#x76EE;&#x5F55;&#xFF1B;</li>
+<li>&#x76D1;&#x63A7;&#x7CFB;&#x7EDF;&#x7684;&#x6570;&#x636E;&#x6536;&#x96C6;&#x7EC4;&#x4EF6;&#xFF0C;&#x5982;&#xFF08;Prometheus Node Exporter&#xFF0C;Cadvisor&#xFF09;&#x9700;&#x8981;&#x8FD0;&#x884C;&#x5728;&#x6BCF;&#x4E00;&#x4E2A;&#x8282;&#x70B9;&#x4E0A;&#xFF0C;&#x8D1F;&#x8D23;&#x8FD9;&#x4E2A;&#x8282;&#x70B9;&#x4E0A;&#x7684;&#x76D1;&#x63A7;&#x4FE1;&#x606F;&#x641C;&#x96C6;&#x3002;</li>
+<li>&#x65E5;&#x5FD7;&#x7CFB;&#x7EDF;&#x7684;&#x6570;&#x636E;&#x6536;&#x96C6;&#x7EC4;&#x4EF6;&#xFF0C;&#x5982;&#xFF08;Fluent&#xFF0C;Logstash&#xFF09;&#x9700;&#x8981;&#x8FD0;&#x884C;&#x5728;&#x6BCF;&#x4E00;&#x4E2A;&#x8282;&#x70B9;&#x4E0A;&#xFF0C;&#x8D1F;&#x8D23;&#x8FD9;&#x4E2A;&#x8282;&#x70B9;&#x4E0A;&#x7684;&#x65E5;&#x5FD7;&#x4FE1;&#x606F;&#x641C;&#x96C6;&#x3002;</li>
+</ul>
+<h3 id="jobcronjob">Job/CronJob</h3>
+<ul>
+<li>Job&#x8D1F;&#x8D23;&#x5904;&#x7406;&#x4EFB;&#x52A1;&#xFF0C;&#x5373;&#x4EC5;&#x6267;&#x884C;&#x4E00;&#x6B21;&#x7684;&#x4EFB;&#x52A1;&#xFF0C;&#x5B83;&#x4FDD;&#x8BC1;&#x6279;&#x5904;&#x7406;&#x4EFB;&#x52A1;&#x7684;&#x4E00;&#x4E2A;&#x6216;&#x591A;&#x4E2A;Pod&#x6210;&#x529F;&#x7ED3;&#x675F;&#xFF0C;&#x89E3;&#x51B3;&#x4E00;&#x4E9B;&#x9700;&#x8981;&#x8FDB;&#x884C;&#x6279;&#x91CF;&#x6570;&#x636E;&#x5904;&#x7406;&#x548C;&#x5206;&#x6790;&#x7684;&#x9700;&#x6C42;&#xFF0C;&#xFF0C;&#x6BD4;&#x5982;Jenkins Slave&#xFF0C;&#x53D1;&#x5E03;&#x5B8C;&#x4EE3;&#x7801;&#x540E;&#x4EFB;&#x52A1;&#x7ED3;&#x675F;&#xFF0C;Pod&#x81EA;&#x52A8;&#x9500;&#x6BC1;&#xFF1B;</li>
+<li>CronJob&#x5219;&#x5C31;&#x662F;&#x5728;Job&#x4E0A;&#x52A0;&#x4E0A;&#x4E86;&#x65F6;&#x95F4;&#x8C03;&#x5EA6;&#xFF0C;&#x7528;&#x6765;&#x6267;&#x884C;&#x4E00;&#x4E9B;&#x5468;&#x671F;&#x6027;&#x7684;&#x4EFB;&#x52A1;&#x3002;<h3 id="hpa">HPA</h3>
+Horizontal Pod Autoscaling&#xFF08;Pod&#x6C34;&#x5E73;&#x81EA;&#x52A8;&#x4F38;&#x7F29;&#xFF09;&#xFF0C;&#x7B80;&#x79F0;HPA&#x3002;&#x901A;&#x8FC7;&#x76D1;&#x63A7;&#x5206;&#x6790;RC&#x6216;&#x8005;Deployment&#x63A7;&#x5236;&#x7684;&#x6240;&#x6709;Pod&#x7684;&#x8D1F;&#x8F7D;&#x53D8;&#x5316;&#x60C5;&#x51B5;&#x6765;&#x786E;&#x5B9A;&#x662F;&#x5426;&#x9700;&#x8981;&#x8C03;&#x6574;Pod&#x7684;&#x526F;&#x672C;&#x6570;&#x91CF;&#xFF0C;&#x8FD9;&#x662F;HPA&#x6700;&#x57FA;&#x672C;&#x7684;&#x539F;&#x7406;&#x3002;<h2 id="3-&#x5176;&#x4ED6;&#x5BF9;&#x8C61;">3. &#x5176;&#x4ED6;&#x5BF9;&#x8C61;</h2>
+<h3 id="configmap">ConfigMap</h3>
+ConfigMap&#xFF1A;&#x5C31;&#x662F;&#x4E3A;&#x4E86;&#x8BA9;&#x955C;&#x50CF;&#x548C;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x89E3;&#x8026;&#xFF0C;&#x4EE5;&#x4FBF;&#x5B9E;&#x73B0;&#x955C;&#x50CF;&#x7684;&#x53EF;&#x79FB;&#x690D;&#x6027;&#x548C;&#x53EF;&#x590D;&#x7528;&#x6027;&#xFF0C;&#x56E0;&#x4E3A;&#x4E00;&#x4E2A;configMap&#x5176;&#x5B9E;&#x5C31;&#x662F;&#x4E00;&#x7CFB;&#x5217;&#x914D;&#x7F6E;&#x4FE1;&#x606F;&#x7684;&#x96C6;&#x5408;&#xFF0C;&#x5C06;&#x6765;&#x53EF;&#x76F4;&#x63A5;&#x6CE8;&#x5165;&#x5230;Pod&#x4E2D;&#x7684;&#x5BB9;&#x5668;&#x4F7F;&#x7528;&#xFF0C;&#x800C;&#x6CE8;&#x5165;&#x65B9;&#x5F0F;&#x6709;&#x4E24;&#x79CD;&#xFF0C;&#x4E00;&#x79CD;&#x5C06;configMap&#x505A;&#x4E3A;&#x5B58;&#x50A8;&#x5377;&#xFF0C;&#x4E00;&#x79CD;&#x662F;&#x5C06;configMap&#x901A;&#x8FC7;env&#x4E2D;configMapKeyRef&#x6CE8;&#x5165;&#x5230;&#x5BB9;&#x5668;&#x4E2D;&#xFF1B;<h3 id="rbac">RBAC</h3>
+RBAC&#xFF1A;&#x57FA;&#x4E8E;&#x89D2;&#x8272;&#x7684;&#x8BBF;&#x95EE;&#x63A7;&#x5236;&#xFF0C;&#x53EF;&#x4EE5;&#x7528;&#x6765;&#x7ED9;&#x7528;&#x6237;&#x6388;&#x4E88;&#x5BF9;&#x96C6;&#x7FA4;&#x64CD;&#x4F5C;&#x4E0D;&#x540C;&#x7684;&#x6743;&#x9650;&#x3002;<h3 id="secret">Secret</h3>
+Secret&#xFF1A;&#x7528;&#x6765;&#x4FDD;&#x5B58;&#x654F;&#x611F;&#x4FE1;&#x606F;&#xFF0C;&#x4F8B;&#x5982;&#x5BC6;&#x7801;&#x3001;OAuth &#x4EE4;&#x724C;&#x548C; ssh key&#x7B49;&#x7B49;&#xFF0C;&#x5C06;&#x8FD9;&#x4E9B;&#x4FE1;&#x606F;&#x653E;&#x5728;Secret&#x4E2D;&#x6BD4;&#x653E;&#x5728;Pod&#x7684;&#x5B9A;&#x4E49;&#x4E2D;&#x6216;&#x8005;docker&#x955C;&#x50CF;&#x4E2D;&#x6765;&#x8BF4;&#x66F4;&#x52A0;&#x5B89;&#x5168;&#x548C;&#x7075;&#x6D3B;&#x3002;<h2 id="4-&#x670D;&#x52A1;&#x53D1;&#x73B0;">4. &#x670D;&#x52A1;&#x53D1;&#x73B0;</h2>
+<h3 id="service">Service</h3>
+Service&#xFF1A;&#x662F;&#x4E00;&#x79CD;&#x62BD;&#x8C61;&#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x5B83;&#x5B9A;&#x4E49;&#x4E86;&#x4E00;&#x7EC4;Pod&#x7684;&#x903B;&#x8F91;&#x96C6;&#x5408;&#x548C;&#x4E00;&#x4E2A;&#x7528;&#x4E8E;&#x8BBF;&#x95EE;&#x5B83;&#x4EEC;&#x7684;&#x7B56;&#x7565;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x8BBF;&#x95EE;Service&#x6765;&#x8BBF;&#x95EE;&#x5230;&#x540E;&#x7AEF;&#x7684;Pod&#x670D;&#x52A1;&#xFF0C;&#x5176;&#x5B9E;&#x8FD9;&#x4E2A;&#x6982;&#x5FF5;&#x548C;&#x5FAE;&#x670D;&#x52A1;&#x975E;&#x5E38;&#x7C7B;&#x4F3C;&#x3002;&#x4E00;&#x4E2A;Serivce&#x4E0B;&#x9762;&#x5305;&#x542B;&#x7684;Pod&#x96C6;&#x5408;&#x4E00;&#x822C;&#x662F;&#x7531;Label Selector&#x6765;&#x51B3;&#x5B9A;&#x7684;&#x3002;<h3 id="ingress">Ingress</h3>
+Ingress&#xFF1A;&#x5C31;&#x662F;&#x4ECE; kuberenets &#x96C6;&#x7FA4;&#x5916;&#x90E8;&#x8BBF;&#x95EE;&#x96C6;&#x7FA4;&#x7684;&#x4E00;&#x4E2A;&#x5165;&#x53E3;&#xFF0C;&#x5C06;&#x5916;&#x90E8;&#x7684;&#x8BF7;&#x6C42;&#x8F6C;&#x53D1;&#x5230;&#x96C6;&#x7FA4;&#x5185;&#x4E0D;&#x540C;&#x7684; Service &#x4E0A;&#xFF0C;&#x5176;&#x5B9E;&#x5C31;&#x76F8;&#x5F53;&#x4E8E; nginx&#x3001;haproxy &#x7B49;&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#x4EE3;&#x7406;&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x76EE;&#x524D;&#x9009;&#x62E9;&#x6709;&#x5F88;&#x591A;&#xFF1A; traefik&#x3001;nginx-controller&#x3001;Kubernetes Ingress Controller for Kong&#x3001;HAProxy Ingress controller&#x3002;<h2 id="5-&#x5B58;&#x50A8;&#x5BF9;&#x8C61;">5. &#x5B58;&#x50A8;&#x5BF9;&#x8C61;</h2>
+<h3 id="pvpvc">PV/PVC</h3>
+</li>
+<li>PV &#x7684;&#x5168;&#x79F0;&#x662F;&#xFF1A;PersistentVolume&#xFF08;&#x6301;&#x4E45;&#x5316;&#x5377;&#xFF09;&#xFF0C;&#x662F;&#x5BF9;&#x5E95;&#x5C42;&#x7684;&#x5171;&#x4EAB;&#x5B58;&#x50A8;&#x7684;&#x4E00;&#x79CD;&#x62BD;&#x8C61;&#xFF0C;PV &#x7531;&#x7BA1;&#x7406;&#x5458;&#x8FDB;&#x884C;&#x521B;&#x5EFA;&#x548C;&#x914D;&#x7F6E;&#xFF0C;&#x5B83;&#x548C;&#x5177;&#x4F53;&#x7684;&#x5E95;&#x5C42;&#x7684;&#x5171;&#x4EAB;&#x5B58;&#x50A8;&#x6280;&#x672F;&#x7684;&#x5B9E;&#x73B0;&#x65B9;&#x5F0F;&#x6709;&#x5173;&#xFF0C;&#x6BD4;&#x5982; Ceph&#x3001;GlusterFS&#x3001;NFS &#x7B49;&#xFF0C;&#x90FD;&#x662F;&#x901A;&#x8FC7;&#x63D2;&#x4EF6;&#x673A;&#x5236;&#x5B8C;&#x6210;&#x4E0E;&#x5171;&#x4EAB;&#x5B58;&#x50A8;&#x7684;&#x5BF9;&#x63A5;&#x3002;</li>
+<li>PVC &#x7684;&#x5168;&#x79F0;&#x662F;&#xFF1A;PersistentVolumeClaim&#xFF08;&#x6301;&#x4E45;&#x5316;&#x5377;&#x58F0;&#x660E;&#xFF09;&#xFF0C;PVC &#x662F;&#x7528;&#x6237;&#x5B58;&#x50A8;&#x7684;&#x4E00;&#x79CD;&#x58F0;&#x660E;&#xFF0C;PVC &#x548C; Pod &#x6BD4;&#x8F83;&#x7C7B;&#x4F3C;&#xFF0C;Pod &#x6D88;&#x8017;&#x7684;&#x662F;&#x8282;&#x70B9;&#xFF0C;PVC &#x6D88;&#x8017;&#x7684;&#x662F; PV &#x8D44;&#x6E90;&#xFF0C;Pod &#x53EF;&#x4EE5;&#x8BF7;&#x6C42; CPU &#x548C;&#x5185;&#x5B58;&#xFF0C;&#x800C; PVC &#x53EF;&#x4EE5;&#x8BF7;&#x6C42;&#x7279;&#x5B9A;&#x7684;&#x5B58;&#x50A8;&#x7A7A;&#x95F4;&#x548C;&#x8BBF;&#x95EE;&#x6A21;&#x5F0F;&#x3002;&#x5BF9;&#x4E8E;&#x771F;&#x6B63;&#x4F7F;&#x7528;&#x5B58;&#x50A8;&#x7684;&#x7528;&#x6237;&#x4E0D;&#x9700;&#x8981;&#x5173;&#x5FC3;&#x5E95;&#x5C42;&#x7684;&#x5B58;&#x50A8;&#x5B9E;&#x73B0;&#x7EC6;&#x8282;&#xFF0C;&#x53EA;&#x9700;&#x8981;&#x76F4;&#x63A5;&#x4F7F;&#x7528; PVC &#x5373;&#x53EF;&#x3002;<h3 id="storageclass">StorageClass</h3>
+StorageClass&#xFF1A;&#x52A8;&#x6001; PV&#xFF0C;&#x53EF;&#x4EE5;&#x81EA;&#x52A8;&#x5E2E;&#x6211;&#x4EEC;&#x521B;&#x5EFA; PV&#xFF0C;&#x4E0D;&#x518D;&#x9700;&#x8981;&#x624B;&#x52A8;&#x521B;&#x5EFA;PV&#x3002;</li>
+</ul>
+<h2 id="6-&#x5176;&#x4ED6;&#x6982;&#x5FF5;">6. &#x5176;&#x4ED6;&#x6982;&#x5FF5;</h2>
+<h3 id="helm">Helm</h3>
+<p>Helm&#xFF1A;&#x5305;&#x7BA1;&#x7406;&#x5DE5;&#x5177;&#xFF0C;&#x76F8;&#x5F53;&#x4E8E;kubernetes&#x73AF;&#x5883;&#x4E0B;&#x7684;yum&#x5305;&#x7BA1;&#x7406;&#x5DE5;&#x5177;&#x3002;</p>
+<h3 id="crd">CRD</h3>
+<p>CRD&#x662F;&#x5BF9; Kubernetes API &#x7684;&#x6269;&#x5C55;&#xFF0C;Kubernetes &#x4E2D;&#x7684;&#x6BCF;&#x4E2A;&#x8D44;&#x6E90;&#x90FD;&#x662F;&#x4E00;&#x4E2A; API &#x5BF9;&#x8C61;&#x7684;&#x96C6;&#x5408;&#xFF0C;&#x4F8B;&#x5982;&#x6211;&#x4EEC;&#x5728;YAML&#x6587;&#x4EF6;&#x91CC;&#x5B9A;&#x4E49;&#x7684;&#x90A3;&#x4E9B;spec&#x90FD;&#x662F;&#x5BF9; Kubernetes &#x4E2D;&#x7684;&#x8D44;&#x6E90;&#x5BF9;&#x8C61;&#x7684;&#x5B9A;&#x4E49;&#xFF0C;&#x6240;&#x6709;&#x7684;&#x81EA;&#x5B9A;&#x4E49;&#x8D44;&#x6E90;&#x53EF;&#x4EE5;&#x8DDF; Kubernetes &#x4E2D;&#x5185;&#x5EFA;&#x7684;&#x8D44;&#x6E90;&#x4E00;&#x6837;&#x4F7F;&#x7528; kubectl &#x64CD;&#x4F5C;&#x3002;</p>
+<h3 id="operator">Operator</h3>
+<p>Operator&#x662F;&#x7531;CoreOS&#x516C;&#x53F8;&#x5F00;&#x53D1;&#x7684;&#xFF0C;&#x7528;&#x6765;&#x6269;&#x5C55; Kubernetes API&#xFF0C;&#x7279;&#x5B9A;&#x7684;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x63A7;&#x5236;&#x5668;&#xFF0C;&#x5B83;&#x7528;&#x6765;&#x521B;&#x5EFA;&#x3001;&#x914D;&#x7F6E;&#x548C;&#x7BA1;&#x7406;&#x590D;&#x6742;&#x7684;&#x6709;&#x72B6;&#x6001;&#x5E94;&#x7528;&#xFF0C;&#x5982;&#x6570;&#x636E;&#x5E93;&#x3001;&#x7F13;&#x5B58;&#x548C;&#x76D1;&#x63A7;&#x7CFB;&#x7EDF;&#x3002;Operator&#x57FA;&#x4E8E; Kubernetes &#x7684;&#x8D44;&#x6E90;&#x548C;&#x63A7;&#x5236;&#x5668;&#x6982;&#x5FF5;&#x4E4B;&#x4E0A;&#x6784;&#x5EFA;&#xFF0C;&#x4F46;&#x540C;&#x65F6;&#x53C8;&#x5305;&#x542B;&#x4E86;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x7279;&#x5B9A;&#x7684;&#x4E00;&#x4E9B;&#x4E13;&#x4E1A;&#x77E5;&#x8BC6;&#xFF0C;&#x6BD4;&#x5982;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x6570;&#x636E;&#x5E93;&#x7684;Operator&#xFF0C;&#x5219;&#x5FC5;&#x987B;&#x5BF9;&#x521B;&#x5EFA;&#x7684;&#x6570;&#x636E;&#x5E93;&#x7684;&#x5404;&#x79CD;&#x8FD0;&#x7EF4;&#x65B9;&#x5F0F;&#x975E;&#x5E38;&#x4E86;&#x89E3;&#xFF0C;&#x521B;&#x5EFA;Operator&#x7684;&#x5173;&#x952E;&#x662F;CRD&#xFF08;&#x81EA;&#x5B9A;&#x4E49;&#x8D44;&#x6E90;&#xFF09;&#x7684;&#x8BBE;&#x8BA1;&#x3002;Operator&#x662F;&#x5C06;&#x8FD0;&#x7EF4;&#x4EBA;&#x5458;&#x5BF9;&#x8F6F;&#x4EF6;&#x64CD;&#x4F5C;&#x7684;&#x77E5;&#x8BC6;&#x7ED9;&#x4EE3;&#x7801;&#x5316;&#xFF0C;&#x540C;&#x65F6;&#x5229;&#x7528; Kubernetes &#x5F3A;&#x5927;&#x7684;&#x62BD;&#x8C61;&#x6765;&#x7BA1;&#x7406;&#x5927;&#x89C4;&#x6A21;&#x7684;&#x8F6F;&#x4EF6;&#x5E94;&#x7528;&#x3002;</p>
+<hr>
+<p>&#x4E0B;&#x7BC7;&#x6587;&#x7AE0;&#xFF1A;<a href="https://blog.csdn.net/qq_39254455/article/details/105729732" target="_blank">&#x4F7F;&#x7528;kubeadm&#x5FEB;&#x901F;&#x90E8;&#x7F72;K8S&#x96C6;&#x7FA4;</a>
+&#x7CFB;&#x5217;&#x6587;&#x7AE0;&#xFF1A;<a href="https://www.jianshu.com/nb/41327096" target="_blank">&#x6DF1;&#x5165;&#x7406;&#x89E3;Kuerneters</a></p>
+<hr>
+<p>&#x5173;&#x6CE8;&#x516C;&#x4F17;&#x53F7;&#x56DE;&#x590D;&#x3010;k8s&#x3011;&#x5173;&#x952E;&#x8BCD;&#x83B7;&#x53D6;&#x89C6;&#x9891;&#x6559;&#x7A0B;&#x53CA;&#x66F4;&#x591A;&#x8D44;&#x6599;&#xFF1A;
+<img src="https://upload-images.jianshu.io/upload_images/9644303-0b4ae39913673411?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="&#x524D;&#x884C;&#x6280;&#x672F;&#x5708;"></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: Kubernetes基础">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="kubeadm.html" class="navigation navigation-next " aria-label="Next page: 使用Kubeadm部署集群">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"基本概念与组件原理","level":"1.2.1","depth":2,"next":{"title":"使用Kubeadm部署集群","level":"1.2.2","depth":2,"path":"Chapter1/kubeadm.md","ref":"Chapter1/kubeadm.md","articles":[]},"previous":{"title":"Kubernetes基础","level":"1.2","depth":1,"path":"Chapter1/README.md","ref":"Chapter1/README.md","articles":[{"title":"基本概念与组件原理","level":"1.2.1","depth":2,"path":"Chapter1/jieshao.md","ref":"Chapter1/jieshao.md","articles":[]},{"title":"使用Kubeadm部署集群","level":"1.2.2","depth":2,"path":"Chapter1/kubeadm.md","ref":"Chapter1/kubeadm.md","articles":[]},{"title":"YAML文件语法","level":"1.2.3","depth":2,"path":"Chapter1/YAML.md","ref":"Chapter1/YAML.md","articles":[]},{"title":"深入理解Pod","level":"1.2.4","depth":2,"path":"Chapter1/Pod.md","ref":"Chapter1/Pod.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Chapter1/jieshao.md","mtime":"2020-07-28T06:59:15.820Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-28T07:11:59.180Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
